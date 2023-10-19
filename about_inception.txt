@@ -1,0 +1,11 @@
+1) In this video we learned how to inject react to our project using CDN links how they are written and also their significance.
+2) React is just a piece of code i.e. it is a javascript library written by Facebook developers.
+2) Then we googled the meaning of CDN and why we use it.
+3) Created html elements using Javascript.
+4) Also created the same HTML elements using React.
+5) We learned why using only react without JSX makes our Code complex and hard to read.
+6) I also learned the meaning of Crossorigin in the script tag.
+7) Understanding the sequence of file structure like why the script tag is placed below the react CDN links.
+8) Significance of root.render() tag.
+9) Why do we call react a library because it works in the small portion of our app independently.
+10)Libary vs Frameworks.
