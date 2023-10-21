@@ -34,6 +34,13 @@ It also helps to prevent issues with installing different package versions, whic
 Q) What are Node modules?
 --> This module contains all the codes that we fetched from NPM. The node modules contain the actual data of the dependencies that we are installing.
 
+Q) Transitive Dependencies?
+--> For example we download the parcel, for the parcel also has some dependencies and those dependencies also need other dependencies so everything 
+that is required for the module is stored inside the Node dependencies.
+
+Q) 
+  
+
 
 
 
