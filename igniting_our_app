@@ -52,3 +52,10 @@ then it again recreates our node modules
 NPX: To execute a package we use NPX 
 NPM: To install a package we use NPM
 
+--> NOTE: These CDN links are not a preferred way to introduce react into our project because 
+it is costly as it is fetching from a website and we have to keep changing our URL for newer versions
+the much-preferred way is by inserting via NPM because, at the end of the day, React is a Javascript package present in NPM. 
+so it will be really easy and efficient to access it from our Node Modules.
+
+-->npm i react
+-->npm i react-dom
