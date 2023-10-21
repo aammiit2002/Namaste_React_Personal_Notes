@@ -38,9 +38,15 @@ Q) Transitive Dependencies?
 --> For example we download the parcel, for the parcel also has some dependencies and those dependencies also need other dependencies so everything 
 that is required for the module is stored inside the Node dependencies.
 
-Q) 
+NOTE: There is no need to put node modules in your git but it's absolutely necessary to put 
+package.json and package-lock.json because if we have these two then we can recreate all our 
+node modules.
+To avoid pushing node modules to git: 
+Create a .gitignore file and write /node-modules(File name that you don't want)
   
-
+If we delete our node modules we can again recreate it by:
+npm install
+then it again recreates our node modules
 
 
 
