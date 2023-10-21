@@ -48,5 +48,7 @@ If we delete our node modules we can again recreate it by:
 npm install
 then it again recreates our node modules
 
-
+-->>🧑‍💻🧑‍💻🧑‍💻Now to ignite our app we use npx parcel index.html: this hosts our app as a localhost:1234, we have executed the parcel now(The bundler).
+NPX: To execute a package we use NPX 
+NPM: To install a package we use NPM
 
