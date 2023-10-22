@@ -1,10 +1,23 @@
+⭐⭐⭐Topics covered:⭐⭐⭐
+• JSX Introduced & its usage.
+• Transpiling the JSX
+• What is Babel
+• Usage of class & className in JSX
+• What are React Components?
+• Class based & Functional components
+• Component Composition
+• Cross-Site Scripting
+• JSX Expressions
+• React Fragments
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
 We can create scripts to create dev build an app
 behind the scenes, it will run our project in dev mode
 "scripts: {
   "start": "parcel index.html" //We wrote this for running our app in dev mode
   "build": "parcel build index.html" //We wrote this for running our app in production mode
 }
-NOTE:-
+⭐NOTE:-
 now with the help of these scripts, we don't have to write these commands npx parcel build index.html etc,
 we can use: npm run start(the keyword used in the script)/ npm start (this will only work for start as start is a keyword in npm won't work for build)
 
@@ -14,10 +27,10 @@ is an object => when rendered in DOM it becomes an HTML element.
 ## But the syntax below looks very bad as it is not easy to write as compared to simple HTML
 So the developers created JSX
 
-## NOTE: JSX IS NOT A PART OF REACT, BOTH ARE DIFFERENT: Because we can build react apps using JSX all the big apps can be built
+⭐NOTE: JSX IS NOT A PART OF REACT, BOTH ARE DIFFERENT: Because we can build react apps using JSX all the big apps can be built
 But JSX makes the life of developers easy
 
-Q) HOW TO REACT H1 TAG INSIDE JSX?
+❓) HOW TO REACT H1 TAG INSIDE JSX?
 The jsxHeading here is a react element
 --> const jsxHeading = <h1>Namaste React using JSX</h1>;
 📌📌📌 JSX IS NOT HTML INSIDE JAVASCRIPT 
@@ -28,11 +41,11 @@ const jsxHeading = <h1>Namaste React using JSX</h1>;
 This is not a valid pure javascript
 That's why when we write this code in the console of Chrome it shows an error.
 
-Q) But why does it still work in our project?
+❓) But why does it still work in our project?
 --> Because Parcel is behind it. Even before it goes to the JS engine it is transpired by the 
 Parcel. Then JS engine receives the code that the browser understands. This whole thing is done
 by a package in Parcel known as Babel.
-Q) What is Babel?
+❓) What is Babel?
 --> A source-to-source compiler, transcompiler or transpiler is a type of compiler that takes the
  source code of a program written in one programming language as its input and produces the equivalent
  source code in another programming language.
@@ -48,14 +61,17 @@ Ex: const jsxHeading = (
     Namaste React using JSX
   </h1>
 );
-NOTE: In the above code if we write the JSX in a single line it is fine but
+⭐NOTE: In the above code if we write the JSX in a single line it is fine but
 if we want to write it in multiple lines then we have to put () and write the JSX inside it. 
-NOTE: So if we have to give attributes to JSX then we need to use Camel case
+⭐NOTE: So if we have to give attributes to JSX then we need to use Camel case
 
 H/W: Explore various attributes of various tags
 
 📌📌📌React Components📌📌📌
-
+General statement: Everything in react is a Component. EX: header, search bar, footer, text box etc.
+=> Components are of two types:-
+1) Class-based components
+2) Functional Components
 
 
 
