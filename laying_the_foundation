@@ -1,9 +1,24 @@
-We can create scripts to create dev build app
-behind the secenes it will run our project in dev mode
+We can create scripts to create dev build an app
+behind the scenes, it will run our project in dev mode
 "scripts: {
   "start": "parcel index.html" //We wrote this for running our app in dev mode
   "build": "parcel build index.html" //We wrote this for running our app in production mode
 }
 NOTE:-
-now with the help of these scripts we don't have to write thse commands npx parcel build index.html etc,
-we can use: npm run start(the keyword used in script)/ npm start (this will only work for start as start is a keyword in npm won't work for build)
+now with the help of these scripts, we don't have to write these commands npx parcel build index.html etc,
+we can use: npm run start(the keyword used in the script)/ npm start (this will only work for start as start is a keyword in npm won't work for build)
+
+## React Element = React.createElement => 
+is an object => when rendered in DOM it becomes an HTML element.
+
+## But the syntax below looks very bad as it is not easy to write as compared to simple HTML
+So the developers created JSX
+
+## NOTE: JSX IS NOT A PART OF REACT, BOTH ARE DIFFERENT: Because we can build react apps using JSX all the big apps can be built
+But JSX makes the life of developers easy
+
+Q) HOW TO REACT H1 TAG INSIDE JSX?
+The jsxHeading here is a react element
+--> const jsxHeading = <h1>Namaste React using JSX</h1>;
+📌📌📌 JSX IS NOT HTML INSIDE JAVASCRIPT 
+JSX is an HTML or XML-like syntax
