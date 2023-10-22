@@ -1,0 +1,9 @@
+We can create scripts to create dev build app
+behind the secenes it will run our project in dev mode
+"scripts: {
+  "start": "parcel index.html" //We wrote this for running our app in dev mode
+  "build": "parcel build index.html" //We wrote this for running our app in production mode
+}
+NOTE:-
+now with the help of these scripts we don't have to write thse commands npx parcel build index.html etc,
+we can use: npm run start(the keyword used in script)/ npm start (this will only work for start as start is a keyword in npm won't work for build)
