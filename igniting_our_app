@@ -54,8 +54,41 @@ NPM: To install a package we use NPM
 
 --> NOTE: These CDN links are not a preferred way to introduce react into our project because 
 it is costly as it is fetching from a website and we have to keep changing our URL for newer versions
-the much-preferred way is by inserting via NPM because, at the end of the day, React is a Javascript package present in NPM. 
+the much-preferred way is by inserting via NPM because React is a Javascript package present in NPM at the end of the day. 
 so it will be really easy and efficient to access it from our Node Modules.
 
 -->npm i react
 -->npm i react-dom
+Still, that doesn't make our application run because every syntax we used in our code was coming from the CDN links but 
+now to use the react from the node modules we have to import the react
+import React from 'react';
+this 'react' comes from the react from my node modules.
+now when you run You get this error:
+import React from "react";
+  >   | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    2 | import ReactDOM from "react-dom";
+    3 | //first react code
+
+  C:\Users\AMIT THAKUR\Desktop\Namaste React\index.html:20:5
+    19 |     <script crossorigin src="https://unpkg.
+  > 20 |     </script> -->
+  >    |     ^^^^^^^^^^^^^^ The environment was originally created here
+    21 |
+    22 |     <script src="App.js"></script>
+
+  💡 Add the type="module" attribute to the         
+     <script> tag.
+---> Normal script won't work you have to make your script a module
+
+# Parcel
+--> Dev Build: It is creating a Dev build for u
+--> Local server: It builds a local server for us
+--> HMR: Hot Module Replacement (It also automatically refreshes our page)
+--> FILE WATCHING ALGO: The HMR is possible because the Parcel uses a FILE WATCHING ALGO written in C++.
+--> Caching: Parcel gives us faster build because it is using Caching by creating a parcel cache.
+-->Image-Optimisation: Parcel can do image optimisation for us too as loading the image is very costly.
+--> Minification: If I create a production build then the parcel will minify our files.
+--> Bundling
+--> Compressing: Also compresses our file to decrease our size
+
+
