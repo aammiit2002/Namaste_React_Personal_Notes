@@ -98,4 +98,22 @@ import React from "react";
 --> PARCEL also provides us with a way to host the app on HTTPS
 --> Tree shaking algo: It removes unused codes for us.
 
+--> If we want to use the parcel for production build then use the command:
+npx parcel build index.html
+-> But this will give us an error because if you go into the package.json file 
+we can see the entry point i.e. main as App.js
+so just remove it then it will run.
 
+NOTE: When we do npx parcel index.html, it generates the dev build of your project and the host is onto 1234
+so when it generates a dev build it puts it up in a Dist folder, inside this folder there will be 3 main files
+index.html
+style.css
+app.js
+these three files will be totally compressed, if you open this file it will show all the code but will have no spaces.
+
+NOTE: As the Dist and Cache files as temporary files that can be regenerated we will put them inside the gitignore file.
+
+##### Now to make our app compatible with different older versions of our browsers
+we use an npm package called browserslist
+write this code inside the package.json,
+"browserslist": [ "last 4 versions" ]
