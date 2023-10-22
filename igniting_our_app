@@ -90,5 +90,12 @@ import React from "react";
 --> Minification: If I create a production build then the parcel will minify our files.
 --> Bundling
 --> Compressing: Also compresses our file to decrease our size
+--> Consistent Hashing
+--> Code Splitting
+--> Differential Bundling: To support older versions of browsers or any browser this gives us different bundles for different kinds of apps
+--> Diagnostics
+--> Error Handling: It gives us beautiful errors
+--> PARCEL also provides us with a way to host the app on HTTPS
+--> Tree shaking algo: It removes unused codes for us.
 
 
