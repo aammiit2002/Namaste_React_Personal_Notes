@@ -11,7 +11,7 @@
 • React Fragments
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
-We can create scripts to create dev build an app
+✅We can create scripts to create dev build an app
 behind the scenes, it will run our project in dev mode
 "scripts: {
   "start": "parcel index.html" //We wrote this for running our app in dev mode
@@ -21,10 +21,10 @@ behind the scenes, it will run our project in dev mode
 now with the help of these scripts, we don't have to write these commands npx parcel build index.html etc,
 we can use: npm run start(the keyword used in the script)/ npm start (this will only work for start as start is a keyword in npm won't work for build)
 
-## React Element = React.createElement => 
+✅✅React Element = React.createElement => 
 is an object => when rendered in DOM it becomes an HTML element.
 
-## But the syntax below looks very bad as it is not easy to write as compared to simple HTML
+✅✅But the syntax below looks very bad as it is not easy to write as compared to simple HTML
 So the developers created JSX
 
 ⭐NOTE: JSX IS NOT A PART OF REACT, BOTH ARE DIFFERENT: Because we can build react apps using JSX all the big apps can be built
@@ -36,7 +36,7 @@ The jsxHeading here is a react element
 📌📌📌 JSX IS NOT HTML INSIDE JAVASCRIPT 
 JSX is an HTML or XML-like syntax
 
-## JS engine does not understand JSX
+✅✅✅ JS engine does not understand JSX
 const jsxHeading = <h1>Namaste React using JSX</h1>;
 This is not a valid pure javascript
 That's why when we write this code in the console of Chrome it shows an error.
@@ -70,8 +70,41 @@ H/W: Explore various attributes of various tags
 📌📌📌React Components📌📌📌
 General statement: Everything in react is a Component. EX: header, search bar, footer, text box etc.
 => Components are of two types:-
-1) Class-based components
-2) Functional Components
+1) Class-based components: OLD WAY TO WRITE THE CODE
+2) Functional Components: NEW WAY TO WRITE THE CODE
+
+✅ React Functional Components:-
+--> It is just a normal JavaScript Function that returns some JSX.
+-->Whenever we are naming a functional Component write it with a capital letter otherwise will give an error.
+EX: const HeadingComponent = () => {
+  return <h1>Namaste React Functional Component</h1>;
+};
+⭐NOTE: Arrow function can also be written in this way
+-->const fn = () => true;
+this is the same as:
+-->const fn = () => {
+return true
+};
+-->const HeadingComponent = () => (
+  return <h1>Namaste React Functional Component</h1>
+);
+❓ How to render Functional Component
+-->root.render(<heading/>);
+❓ How to render React Element
+--> root.render(heading);
+❓ What is Component composition?
+--> composing two components inside one another 
+component inside the component
+EX: const Title = () => <h1 className="head">Namaste React using JSX</h1>;
+
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <h1 className="heading">Namaste React Functional component</h1>
+  </div>
+);
+❓ How to put an element inside a component
+
 
 
 
