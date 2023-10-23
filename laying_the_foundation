@@ -104,6 +104,22 @@ const HeadingComponent = () => (
   </div>
 );
 ❓ How to put an element inside a component
+--> {jsxHeading}
+--> const jsxHeading = (
+  <h1 className="head">I am react element in react component</h1>
+);
+const HeadingComponent = () => (
+  <div id="container">
+    {jsxHeading}
+    <h1 className="heading">Namaste React Functional component</h1>
+  </div>
+);
+
+❓ How to compose a react element inside a react element?
+--> const re = <span>I am </span>;
+const jsxHeading = (
+  <h1 className="head">{re}react element in react component</h1>
+);
 
 
 
