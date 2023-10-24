@@ -95,6 +95,7 @@ return true
 ❓ What is Component composition?
 --> composing two components inside one another 
 component inside the component
+⭐<Title></Title>: Can also write like this
 EX: const Title = () => <h1 className="head">Namaste React using JSX</h1>;
 
 const HeadingComponent = () => (
@@ -121,6 +122,28 @@ const jsxHeading = (
   <h1 className="head">{re}react element in react component</h1>
 );
 
+✅ Cross-Site Scripting
+--> Cross-site scripting (XSS or CSS) is a Web application attack used to gain access to private information by 
+delivering malicious code to end-users via trusted Web sites.
+--> One of the main advantages of React is that it uses JSX, a syntax extension that allows you to write HTML-like code in JavaScript. 
+JSX is not only convenient but also safe, because it automatically escapes any user input or dynamic values before rendering them to the DOM.
+ This means that any potentially harmful scripts or HTML tags are converted into plain text and cannot be executed. 
+Therefore, you should always use JSX syntax when rendering components and avoid using the dangerouslySetInnerHTML prop, 
+which bypasses the escaping mechanism and exposes you to XSS risks
 
+⭐ NOTE: We can also call the function inside a react component
+EX: const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <Title></Title>
+    {Title()}
+    {jsxHeading}
+    <h1 className="heading">Namaste React Functional component</h1>
+  </div>
+
+⭐ NOTE: These three things are the same:
+   --> <Title />
+   --> <Title></Title>
+   --> {Title()}
 
 
