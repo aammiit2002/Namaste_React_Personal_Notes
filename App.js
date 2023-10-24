@@ -1,33 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-//first react code
-//This parent is an object
 
-/* <div id="parent">
-    <div id="child">
-        <h1>I am h1 tag</h1>
-        <h2>I am h2 tag</h2>
-    </div>
-    <div id="child2">
-        <h1>I am h1 tag</h1>
-        <h2>I am h2 tag</h2>
-    </div>
-</div> */
-//three arguments - (object,attributes,children)
-//why the object is empty-{}? because this is the place where we will give attributes to our tags
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is Amit"),
-    React.createElement("h2", {}, "I am h2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I am h1 tag"),
-    React.createElement("h2", {}, "I am h2 tag"),
-  ])
+//React Element = React.createElement => is an object => when rendered in DOM it becomes an HTML element.
+
+//But the syntax below looks very bad as it is not easy to write as compared to simple html
+
+//So the developers created JSX
+// NOTE: JSX IS NOT A PART OF REACT, BOTH ARE DIFFERENT
+//Because we can build react apps with using JSX all the big apps can be built
+//But JSX makes the life of developers easy
+// const heading = React.createElement("h1", { id: "heading" }, "Namaste React");
+
+//HOW TO REACTE H1 TAG INSIDE JSX
+//JSX IS NOT HTML INSIDE JAVASCRIPT 📌📌📌
+//The jsxHeading here is a react element
+const re = <span>I am </span>;
+const jsxHeading = (
+  <h1 className="head">{re}react element in react component</h1>
 );
-// Just to create a simple nested elements of tags the react code looks so complex so to avoid that we use jsx
 
+//React functional Component: It is a normal javascript function
+const Title = () => <h1 className="header">Namaste React using JSX</h1>;
+
+const HeadingComponent = () => (
+  <div id="conatiner">
+    <Title />
+    <Title></Title>
+    {Title()}
+    {jsxHeading}
+    <h1 className="heading">Namaste React Functional component</h1>
+  </div>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent); //It is just putting the parent inside the div tag with id root.
+
+root.render(<HeadingComponent />);
