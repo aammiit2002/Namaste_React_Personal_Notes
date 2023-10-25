@@ -1,0 +1,6 @@
+✅ PROPS (Properties):-
+Props are also how you pass data from one component to another, as parameters.
+React Props are like function arguments in JavaScript and attributes in HTML.
+To send props into a component, use the same syntax as HTML attributes:
+
+--> Passing a prop to the component is like passing an argument to a function. 
