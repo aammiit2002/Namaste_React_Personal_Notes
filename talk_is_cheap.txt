@@ -4,3 +4,36 @@ React Props are like function arguments in JavaScript and attributes in HTML.
 To send props into a component, use the same syntax as HTML attributes:
 
 --> Passing a prop to the component is like passing an argument to a function. 
+EX: const Dishcard = (props) => {
+  console.log(props);
+  return (
+    <div className="dish">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VKK9aafyPN9Jwp_DATtxN4hS75wrmSwNfw&usqp=CAU"
+        alt=""
+      />
+      <h3>{props.resName}</h3>
+      <h4>{props.cusine}</h4>
+      <h4>4.4 ⭐</h4>
+      <h4>ETA: 38min</h4>
+    </div>
+  );
+};
+--> No matter how many properties we give react wraps them into a single object
+--> We can also destructure the props 
+Ex: const Dishcard = ({resName, cusine}) => {
+  console.log(props);
+  return (
+    <div className="dish">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VKK9aafyPN9Jwp_DATtxN4hS75wrmSwNfw&usqp=CAU"
+        alt=""
+      />
+      <h3>{resName}</h3>
+      <h4>{cusine}</h4>
+      <h4>4.4 ⭐</h4>
+      <h4>ETA: 38min</h4>
+    </div>
+  );
+};
+
