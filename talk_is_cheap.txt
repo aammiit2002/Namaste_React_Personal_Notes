@@ -1,0 +1,65 @@
+📌📌📌Topics covered:📌📌📌
+• How React code works behind the scenes.
+• Building our first app from scratch.
+• Various sections of a web page.
+• Props/state
+• Passing a prop to a component
+• Destructuring the props
+• Optional Chaining
+• Config Driven Ul, Data layer, Ul layer
+• Using the map() function
+
+✅ PROPS (Properties):-
+Props are also how you pass data from one component to another, as parameters.
+React Props are like function arguments in JavaScript and attributes in HTML.
+To send props into a component, use the same syntax as HTML attributes:
+
+--> Passing a prop to the component is like passing an argument to a function. 
+EX: const Dishcard = (props) => {
+  console.log(props);
+  return (
+    <div className="dish">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VKK9aafyPN9Jwp_DATtxN4hS75wrmSwNfw&usqp=CAU"
+        alt=""
+      />
+      <h3>{props.resName}</h3>
+      <h4>{props.cusine}</h4>
+      <h4>4.4 ⭐</h4>
+      <h4>ETA: 38min</h4>
+    </div>
+  );
+};
+--> No matter how many properties we give react wraps them into a single object
+--> We can also destructure the props 
+Ex: const Dishcard = ({resName, cusine}) => {
+  console.log(props);
+  return (
+    <div className="dish">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VKK9aafyPN9Jwp_DATtxN4hS75wrmSwNfw&usqp=CAU"
+        alt=""
+      />
+      <h3>{resName}</h3>
+      <h4>{cusine}</h4>
+      <h4>4.4 ⭐</h4>
+      <h4>ETA: 38min</h4>
+    </div>
+  );
+};
+
+✅ Conflict Driven UI: Our website is driven by data
+--> Controlling your UI according to Data and we get the data conflict from the backend
+--> We have written our UI once and according to the data that is coming from the backend my UI is getting changed.
+EX: In Swiggy the restaurants and offers change if we change the cities
+
+Learn map, and filter from js tutorial used for optimisation of code.
+--> In react while iterating a list we need to uniquely identify all the elements using the key 
+so that it only renders the element, not the whole list.
+This will provide the app a big boost in performance so it becomes fast.
+we can also use indexing to track every element and use the indexes as the key.
+EX: <div className="res-container">
+        {restaurantList.map((restaurant, index) => (
+          <RestaurantCard key={index} resData={resturant} />
+        ))}
+But reacts official document says that this is a bad practice as the order of items might change.
