@@ -40,6 +40,9 @@ Ex: const Dishcard = ({resName, cusine}) => {
 ✅ Conflict Driven UI: Our website is driven by data
 --> Controlling your UI according to Data and we get the data conflict from the backend
 --> We have written our UI once and according to the data that is coming from the backend my UI is getting changed.
-EX: In swiggy the restaurants and offers change if we change the cities
+EX: In Swiggy the restaurants and offers change if we change the cities
 
-
+Learn map, and filter from js tutorial used for optimisation of code.
+--> In react while iterating a list we need to uniquely identify all the elements using the key 
+so that it only renders the element, not the whole list.
+This will provide the app a big boost in performance so it becomes fast.
